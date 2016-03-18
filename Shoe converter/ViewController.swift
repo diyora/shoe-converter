@@ -27,6 +27,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func convertMensSizeButtonPressed(sender: UIButton) {
+        
+        let sizeFromTextFiled = Int(mensSizeTextField.text!)!
+        let conversionConstant = 30
+        let mensConvertedSize = sizeFromTextFiled + conversionConstant
+        mensConvertedSizeLabel.text = "\(mensConvertedSize) in European size"
     }
     
     @IBAction func convertWomensSizeButtonPressed(sender: UIButton) {
